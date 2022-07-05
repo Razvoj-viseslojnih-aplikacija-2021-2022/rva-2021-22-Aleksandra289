@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata');
+
+*{  margin:0;
+    padding:0;
+    font-family: 'Literata', sans-serif;
+    font-style: bold;
+}
+
+#proizvod{
+    width:100%;
+    height: 100vh;
+    background-image: url(background3.jpg);
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+}
+
+.info {
+    background-color: rgb(0,0,0); 
+    background-color: rgba(42, 55, 58, 0.184); 
+    border: 3px solid #22c3e0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }
+
+.info h1{
+    color:rgb(214, 241, 250);
+    font-weight: bold;
+    font-size: 60px;
+}
+
