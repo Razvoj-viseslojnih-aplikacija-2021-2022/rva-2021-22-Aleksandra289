@@ -44,22 +44,22 @@ create index idx_fk_proizvod_proizvodjac on proizvod(proizvodjac);
 create index idx_fk_stavka_racuna_racun on stavka_racuna(racun);
 create index idx_fk_stavka_racuna_proizvod on stavka_racuna(proizvod);
 
-drop sequence racun_id_seq;
+drop sequence if exists racun_id_seq;
 create sequence  racun_id_seq
 minvalue 0
 start with 1;
 
-drop sequence proizvodjac_id_seq;
+drop sequence if exists proizvodjac_id_seq;
 create sequence proizvodjac_id_seq
 minvalue 0
 start with 1;
 
-drop sequence proizvod_id_seq;
+drop sequence if exists proizvod_id_seq;
 create sequence proizvod_id_seq
 minvalue 0
 start with 1;
 
-drop sequence stavka_racuna_id_seq;
+drop sequence if exists stavka_racuna_id_seq;
 create sequence stavka_racuna_id_seq
 minvalue 0
 start with 1;
